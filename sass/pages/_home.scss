@@ -19,6 +19,14 @@
     margin-top: -10rem;
     transform: skewY(-7deg);
 
+    @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+      background-image: linear-gradient(
+          to right bottom, 
+          rgba($color-primary-light, 0.8),
+          rgba($color-primary-dark, 0.8)), 
+        url('../img/nat-4.jpg');
+    }
+
     & > * { // selects the direct children of the class but not the children deeper in the flow -- so just the boxes not all the items in the box as well
       transform: skewY(7deg);
     }
