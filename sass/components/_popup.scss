@@ -30,7 +30,11 @@
     display: table-cell;
 
     @include respond(tab-land) {
-      display: none;
+      // display: none;
+      width: 100%;
+      display: inline-block;
+      position: relative;
+      padding: 0;
     }
   }
   
@@ -39,11 +43,25 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+
+    @include respond(tab-land) {
+      width: 100%;
+      display: inline-block;
+      position: relative;
+      text-align: center;
+    }
   }
   
   &__img {
     display: block;
     width: 100%;
+
+    @include respond(tab-land) {
+      width: 49.5%;
+      padding: 1rem;
+      margin: 0;
+      display: inline-block;
+    }
   }
   
   &__text {

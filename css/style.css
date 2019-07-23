@@ -555,15 +555,30 @@ body {
     display: table-cell; }
     @media (max-width: 75em) {
       .popup__left {
-        display: none; } }
+        width: 100%;
+        display: inline-block;
+        position: relative;
+        padding: 0; } }
   .popup__right {
     width: 66.666667%;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }
+    @media (max-width: 75em) {
+      .popup__right {
+        width: 100%;
+        display: inline-block;
+        position: relative;
+        text-align: center; } }
   .popup__img {
     display: block;
     width: 100%; }
+    @media (max-width: 75em) {
+      .popup__img {
+        width: 49.5%;
+        padding: 1rem;
+        margin: 0;
+        display: inline-block; } }
   .popup__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
